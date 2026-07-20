@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0px;
+  background-color: transparent;
+  z-index: 20;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: max-content;
+  animation: marquee 5s linear infinite;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-20%);
+  }
+}

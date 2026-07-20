@@ -1,0 +1,21 @@
+.marqueeWrapper {
+    overflow: hidden;
+    height: auto;
+}
+
+.marqueeTrack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: scrollDown 80s linear infinite;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
