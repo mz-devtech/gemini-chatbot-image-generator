@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../css/Buttons.module.css";
+import "../css/Buttons.module.css";
 
 const Buttons = () => {
     const buttons = [
-        "Beautiful",
+        "Beautiful ",
         "Moody Lighting",
         "Backlight",
         "Color Grading",
@@ -11,16 +11,21 @@ const Buttons = () => {
         "TXAA",
     ];
 
-    // Duplicate for seamless scrolling
-    const loopButtons = [...buttons, ...buttons];
-
     return (
-        <div className={styles.wrapper}>
-            <div className={styles.track}>
-                {loopButtons.map((text, index) => (
+        <div className="marquee-wrapper">
+            <div className="marquee-track">
+                {buttons.map((text, index) => (
                     <button
-                        key={index}
-                        className="rounded-2xl bg-[#171a24] text-white px-6 py-2 lg:px-10 lg:py-5 font-semibold whitespace-nowrap shrink-0"
+                        key={`a-${index}`}
+                        className="marquee-btn rounded-2xl bg-[#171a24] text-white px-6 py-2 lg:px-10 lg:py-5 font-semibold whitespace-nowrap shrink-0"
+                    >
+                        {text}
+                    </button>
+                ))}
+                {buttons.map((text, index) => (
+                    <button
+                        key={`b-${index}`}
+                        className="marquee-btn rounded-2xl bg-[#171a24] text-white px-6 py-2 lg:px-10 lg:py-5 font-semibold whitespace-nowrap shrink-0"
                     >
                         {text}
                     </button>

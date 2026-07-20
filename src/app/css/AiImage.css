@@ -1,21 +1,19 @@
-/* Buttons.css */
-/* Ticker/marquee animation for buttons - same pattern as AiImage.css */
+/* AiImage.css */
+/* Ticker/marquee animation for the heading - scrolls right to left, seamless loop */
 
 .marquee-wrapper {
   overflow: hidden;
   width: 100%;
-  padding-left: 24px;
 }
 
 .marquee-track {
   display: inline-flex;
-  align-items: center;
   white-space: nowrap;
   animation: marquee 15s linear infinite;
 }
 
-.marquee-btn {
-  margin-right: 20px;
+.marquee-track h1 {
+  padding: 0 2rem;
 }
 
 @keyframes marquee {
@@ -27,7 +25,7 @@
   }
 }
 
-/* Pause on hover */
+/* Pause on hover (optional, remove if not needed) */
 .marquee-wrapper:hover .marquee-track {
   animation-play-state: paused;
 }

@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Navbar } from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Buttons from "./Components/Buttons";
+import WhatWeDo from "./Components/WhatWeDo";
+import AiImage from "./Components/AiImage";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
         <Buttons />
 
       </div>
+      <WhatWeDo />
+      <AiImage />
     </>
   );
 }
