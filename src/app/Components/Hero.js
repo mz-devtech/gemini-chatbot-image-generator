@@ -20,7 +20,7 @@ const loopImages = [...images, ...images];
 
 const Hero = () => {
   return (
-    <div className="relative h-screen overflow-hidden pb-40">
+    <div className="relative h-screen lg:h-screen  overflow-hidden pb-40">
       <video
         autoPlay
         loop
@@ -31,14 +31,14 @@ const Hero = () => {
         <source src="/assets/video-main-bg.mp4" type="video/mp4" />
       </video>
 
-      <div className="relative z-20">
+      <div className="relative z-30">
         <Navbar />
       </div>
 
       {/* Hero Content */}
       <div className="relative z-10 h-full items-center flex z-20">
         <div className="px-4 lg:px-30">
-          <h1 className=" font-bold lg:leading-32 text-4xl  lg:text-[126px] md:text-7xl  text-white">
+          <h1 className=" font-bold lg:leading-32 text-6xl  lg:text-[126px] md:text-7xl  text-white">
             <span className="block">Generate</span>
             <span className="block">AI Images & Text</span>
 
@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
 
       </div>
-    
+
       {/* Diagonal image cascade - continuous vertical marquee */}
       <div
         className={`absolute -right-4  lg:right-32 md:right-16 top-1/2 -translate-y-1/2 z-10 h-screen lg:h-auto
