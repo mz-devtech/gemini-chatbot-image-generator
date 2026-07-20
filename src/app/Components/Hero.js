@@ -20,7 +20,7 @@ const loopImages = [...images, ...images];
 
 const Hero = () => {
   return (
-    <div className="relative h-screen lg:h-screen  overflow-hidden pb-40">
+    <div className="relative h-screen lg:h-screen  overflow-hidden pb-14 md:pb-16 lg:pb-40 ">
       <video
         autoPlay
         loop

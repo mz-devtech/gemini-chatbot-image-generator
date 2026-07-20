@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="-translate-y-22 z-20">
+      <div className="-translate-16 md:-translate-16 lg:-translate-y-22 z-20">
         <Buttons />
 
       </div>
