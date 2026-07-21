@@ -6,6 +6,9 @@ import WhatWeDo from "./Components/WhatWeDo";
 import AiImage from "./Components/AiImage";
 import Welcome from "./Components/Welcome";
 import Portfolio from "./Components/Portfolio";
+import Subscribe from "./Components/Subscribe";
+import { FaQ } from "react-icons/fa6";
+import FaqSection from "./Components/Faq";
 
 export default function Home() {
   return (
@@ -19,7 +22,9 @@ export default function Home() {
       <AiImage />
       <Welcome />
       <AiImage />
-      <Portfolio/>
+      <Portfolio />
+      <Subscribe />
+      <FaqSection/>
 
     </>
   );

@@ -3,8 +3,10 @@
 
 .marquee-wrapper {
   overflow: hidden;
-  width: 100vw;                 /* full viewport width, ignoring parent's width */
-  margin: 0 0 0 calc(-50vw + 50%);  /* pulls it back to start exactly at screen edge x:0 */
+  width: 100vw;
+  /* full viewport width, ignoring parent's width */
+  margin: 0 0 0 calc(-50vw + 50%);
+  /* pulls it back to start exactly at screen edge x:0 */
   padding: 0;
 }
 
@@ -20,15 +22,17 @@
 
 .marquee-btn {
   flex-shrink: 0;
-  margin: 0 0.5rem 0 0;   /* spacing baked into each button, not the track */
+  margin: 0 0.5rem 0 0;
+  /* spacing baked into each button, not the track */
 }
 
 @keyframes marquee-reverse {
   0% {
-    transform: translateX(-50%);
-  }
-  100% {
     transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }
 

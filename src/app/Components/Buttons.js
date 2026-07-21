@@ -15,7 +15,7 @@ const Buttons = () => {
         "Color Grading",
         "Depth Of Field",
         "TXAA",
-        
+
     ];
 
     return (
