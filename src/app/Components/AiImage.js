@@ -6,10 +6,10 @@ const AiImage = () => {
         <>
             <div className='py-3 md:py-5 lg:py-8 marquee-wrapper'>
                 <div className='marquee-track'>
-                    <h1 className='text-[#6600ff] text-9xl font-bold'>
+                    <h1 className='text-[#6600ff] text-4xl md:text-6xl lg:text-9xl font-bold'>
                         AI Image And Text Generator
                     </h1>
-                    <h1 className='text-[#6600ff] text-9xl font-bold'>
+                    <h1 className='text-[#6600ff] text-4xl md:text-6xl lg:text-9xl font-bold'>
                         AI Image And Text Generator
                     </h1>
                 </div>

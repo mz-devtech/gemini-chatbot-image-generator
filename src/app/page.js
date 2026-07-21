@@ -4,6 +4,8 @@ import Hero from "./Components/Hero";
 import Buttons from "./Components/Buttons";
 import WhatWeDo from "./Components/WhatWeDo";
 import AiImage from "./Components/AiImage";
+import Welcome from "./Components/Welcome";
+import Portfolio from "./Components/Portfolio";
 
 export default function Home() {
   return (
@@ -15,6 +17,10 @@ export default function Home() {
       </div>
       <WhatWeDo />
       <AiImage />
+      <Welcome />
+      <AiImage />
+      <Portfolio/>
+
     </>
   );
 }

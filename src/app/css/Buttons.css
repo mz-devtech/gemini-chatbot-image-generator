@@ -1,0 +1,38 @@
+/* Buttons.css */
+/* Ticker/marquee animation for the buttons - scrolls left to right, seamless loop */
+
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100vw;                 /* full viewport width, ignoring parent's width */
+  margin: 0 0 0 calc(-50vw + 50%);  /* pulls it back to start exactly at screen edge x:0 */
+  padding: 0;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  animation: marquee-reverse 30s linear infinite;
+}
+
+.marquee-btn {
+  flex-shrink: 0;
+  margin: 0 0.5rem 0 0;   /* spacing baked into each button, not the track */
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Pause on hover (optional, remove if not needed) */
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
+}

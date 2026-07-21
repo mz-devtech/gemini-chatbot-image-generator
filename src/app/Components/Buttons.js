@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Buttons.module.css";
+import "../css/Buttons.css";
 
 const Buttons = () => {
     const buttons = [
@@ -9,6 +9,13 @@ const Buttons = () => {
         "Color Grading",
         "Depth Of Field",
         "TXAA",
+        "Beautiful ",
+        "Moody Lighting",
+        "Backlight",
+        "Color Grading",
+        "Depth Of Field",
+        "TXAA",
+        
     ];
 
     return (
