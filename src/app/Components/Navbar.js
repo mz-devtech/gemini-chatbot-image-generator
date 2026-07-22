@@ -64,7 +64,7 @@ export const Navbar = () => {
 
                     {/* Desktop Get Started Button */}
                     <div className="hidden lg:block">
-                        <button className="bg-[#6600ff] text-xl py-4 px-10 rounded-2xl text-white">
+                        <button className="bg-[#6600ff] text-xl py-4 px-10 rounded-2xl text-[#fdfdfd]">
                             Get Started
                         </button>
                     </div>
@@ -76,15 +76,15 @@ export const Navbar = () => {
                         aria-label="Toggle menu"
                     >
                         <span
-                            className={`block h-0.5 w-7 bg-white transition-all duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""
+                            className={`block h-0.5 w-7 bg-[#fdfdfd] transition-all duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""
                                 }`}
                         />
                         <span
-                            className={`block h-0.5 w-7 bg-white transition-all duration-300 ${isOpen ? "opacity-0" : "opacity-100"
+                            className={`block h-0.5 w-7 bg-[#fdfdfd] transition-all duration-300 ${isOpen ? "opacity-0" : "opacity-100"
                                 }`}
                         />
                         <span
-                            className={`block h-0.5 w-7 bg-white transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""
+                            className={`block h-0.5 w-7 bg-[#fdfdfd] transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""
                                 }`}
                         />
                     </button>
@@ -114,7 +114,7 @@ export const Navbar = () => {
                             ))}
                         </ul>
 
-                        <button className="bg-[#6600ff] text-xl py-4 px-10 rounded-2xl text-white mt-4">
+                        <button className="bg-[#6600ff] text-xl py-4 px-10 rounded-2xl text-[#fdfdfd] mt-4">
                             Get Started
                         </button>
                     </div>

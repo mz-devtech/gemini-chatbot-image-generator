@@ -27,9 +27,9 @@ const FaqSection = () => {
     }
 
     return (
-        <div className='flex flex-col lg:flex-row w-full'>
+        <div className='flex flex-col lg:flex-row w-[96%] py-5 md:py-7 lg:py-10 mt-16 lg:gap-40 gap-10'>
             {/* Left Image with stat cards */}
-            <div className='w-full lg:w-1/2 relative h-[400px] lg:h-[650px]'>
+            <div className='w-full lg:w-[48%] relative h-[400px] lg:h-[750px] lg:scale-125 mx-auto'>
                 <Image
                     src="/assets/img_49.jpg"
                     fill
@@ -37,31 +37,40 @@ const FaqSection = () => {
                     className="object-cover"
                     alt="AI Generated"
                 />
-                <div className='absolute bottom-8 left-8 flex'>
-                    <div className='bg-[#6d28ff] px-8 py-6 w-[220px]'>
-                        <h4 className='text-white font-bold text-lg'>People</h4>
-                        <p className='text-white font-bold text-4xl mt-3'>100+</p>
-                        <p className='text-white/80 text-sm mt-2'>Adipiscing elit, do eiusm.</p>
+                <div className='absolute bottom-4 -right-6 lg:bottom-30 lg:-right-8 mx-5 justify-center  flex gap-2 lg:gap-6 rounded-2xl'>
+                    <div className='bg-[#6d28ff] lg:px-6 lg:py-8 w-[150px] lg:w-[230px] h-auto p-4'>
+                        <h4 className='text-[#fdfdfd]  lg:font-bold text-sm lg:text-xl '>People</h4>
+                        <p className='text-[#fdfdfd] font-bold text-3xl lg:text-7xl mt-3'>100+</p>
+                        <p className='text-amber-50 text-base mt-2'>Adipiscing elit, do eiusm.</p>
                     </div>
-                    <div className='bg-[#161616] px-8 py-6 w-[220px]'>
-                        <h4 className='text-white font-bold text-lg'>World Offices</h4>
-                        <p className='text-white font-bold text-4xl mt-3'>16</p>
-                        <p className='text-white/80 text-sm mt-2'>Adipiscing elit, do eiusm.</p>
+                    <div className='bg-[#161616] lg:px-8 lg:py-8 p-4 w-[150px] lg:w-[230px] h-auto'>
+                        <h4 className='text-[#fdfdfd] lg:font-bold text-sm lg:text-lg'>World Offices</h4>
+                        <p className='text-[#fdfdfd] font-bold text-3xl lg:text-7xl mt-3'>16</p>
+                        <p className='text-[#fdfdfd] text-base mt-2'>Adipiscing elit, do eiusm.</p>
                     </div>
                 </div>
             </div>
 
             {/* Right FAQ content */}
-            <div className='w-full lg:w-1/2 relative px-6 py-10 lg:py-0 lg:pl-16 flex flex-col justify-center'>
+            <div className='w-full lg:w-[46%] relative flex flex-col justify-center'>
                 <button
                     type="button"
                     aria-label="Play video"
-                    className='w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300 flex items-center justify-center mb-8'
+                    className="
+        lg:w-20 lg:h-20
+        w-14 h-14
+        rounded-full
+        bg-white/10 hover:bg-white/20
+        transition-colors duration-300
+        flex items-center justify-center
+        mb-8
+        mx-auto lg:mx-0
+    "
                 >
-                    <FaPlay className='text-white text-sm ml-1' />
+                    <FaPlay className="text-[#fdfdfd] text-xl ml-1" />
                 </button>
 
-                <h2 className='text-white font-bold text-4xl lg:text-5xl mb-8'>
+                <h2 className='relative text-[#fdfdfd] lg:leading-[80px] mx-5 text-3xl lg:mt-7 mt-3 font-bold lg:text-7xl'>
                     AI Image Generator FAQs
                 </h2>
 
@@ -73,18 +82,18 @@ const FaqSection = () => {
                                 <button
                                     type="button"
                                     onClick={() => toggleFaq(index)}
-                                    className='w-full flex items-center gap-4 text-left'
+                                    className='w-full flex items-center gap-0 lg:gap-4 text-left'
                                 >
-                                    <span className='shrink-0 w-6 h-6 flex items-center justify-center text-white'>
+                                    <span className='shrink-0 w-6 h-6 flex items-center justify-center text-[#fdfdfd]'>
                                         {isActive ? <FaMinus /> : <FaPlus />}
                                     </span>
-                                    <span className='text-white font-bold text-lg'>{faq.question}</span>
+                                    <span className='text-[#fdfdfd] mx-5 font-bold tex-sm lg:text-2xl py-0 lg:py-5'>{faq.question}</span>
                                 </button>
                                 <div
                                     className={`grid transition-all duration-300 ease-in-out ${isActive ? 'grid-rows-[1fr] opacity-100 mt-3' : 'grid-rows-[0fr] opacity-0'}`}
                                 >
                                     <div className='overflow-hidden pl-10'>
-                                        <p className='text-[#a9a7b0] text-base'>{faq.answer}</p>
+                                        <p className='text-[#a9a7b0] text-lg lg:text-2xl font-medium opacity-50 group-hover:opacity-100'>{faq.answer}</p>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +110,7 @@ const FaqSection = () => {
                                 d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                             />
                         </defs>
-                        <text fill="white" fontSize="9" letterSpacing="2">
+                        <text fill="white" fontSize="14" letterSpacing="3">
                             <textPath href="#circlePath" startOffset="0%">
                                 START CREATING • START CREATING •
                             </textPath>

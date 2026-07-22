@@ -38,7 +38,7 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 h-full items-center flex z-20">
         <div className="px-4 lg:px-30">
-          <h1 className=" font-bold lg:leading-32 text-6xl  lg:text-[126px] md:text-7xl  text-white">
+          <h1 className=" font-bold lg:leading-32 text-6xl  lg:text-[126px] md:text-7xl  text-[#fdfdfd]">
             <span className="block">Generate</span>
             <span className="block">AI Images & Text</span>
 
