@@ -11,12 +11,12 @@ const cards = [
     {
         img: "/assets/img_79.jpg",
 
-        title: "The actual history of machine intelligence",
+        title: "All the greatest ideas come unexpectedly",
         date: "March 18 , 2022",
     },
     {
         img: "/assets/img_42.jpg",
-        title: "The actual history of machine intelligence",
+        title: "Why is the next-level art called intelligent?",
         date: "March 18 , 2022",
     },
 ]
@@ -36,7 +36,7 @@ const Blogs = () => {
                 {cards.map((card, i) => (
                     <div
                         key={i}
-                        className='group relative w-full lg:w-1/3 py-14 px-4 lg:py-12 lg:px-10 bg-[#0d111a] overflow-hidden isolate'
+                        className='group relative w-full lg:w-1/3 py-14 px-4 lg:py-22 lg:px-10 bg-[#0d111a] overflow-hidden isolate'
                     >
                         {/* hover background image */}
                         <Image
@@ -54,7 +54,7 @@ const Blogs = () => {
                             <button className='px-4 font-normal py-1  lg:px-6 lg:py-1 uppercase bg-[#6600ff] text-[#fdfdfd] lg:font-medium rounded-lg'>
                                 news
                             </button>
-                            <h5 className='text-[#fdfdfd] text-xl lg:text-5xl font-bold mx-auto lg:leading-14 mt-20 lg:mt-32'>
+                            <h5 className='text-[#fdfdfd] text-xl lg:text-4xl font-bold mx-auto lg:leading-14 mt-20 lg:mt-32'>
                                 {card.title}
                             </h5>
                             <div className='flex items-center justify-start gap-4 lg:mt-6'>
