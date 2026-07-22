@@ -9,6 +9,7 @@ import Portfolio from "./Components/Portfolio";
 import Subscribe from "./Components/Subscribe";
 import { FaQ } from "react-icons/fa6";
 import FaqSection from "./Components/Faq";
+import Blogs from "./Components/Blogs";
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
       <AiImage />
       <Portfolio />
       <Subscribe />
-      <FaqSection/>
+      <FaqSection />
+      <Blogs />
 
     </>
   );

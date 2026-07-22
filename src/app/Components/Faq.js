@@ -102,7 +102,7 @@ const FaqSection = () => {
                 </div>
 
                 {/* Rotating badge */}
-                <div className='hidden lg:flex absolute bottom-10 right-6 w-24 h-24 items-center justify-center'>
+                <div className='hidden lg:flex absolute -bottom-20 right-6 w-38 h-38 items-center justify-center'>
                     <svg viewBox="0 0 100 100" className='w-full h-full animate-[spin_10s_linear_infinite]'>
                         <defs>
                             <path
