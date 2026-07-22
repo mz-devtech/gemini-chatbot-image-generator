@@ -4,7 +4,7 @@ import { LuSend } from "react-icons/lu";
 const Subscribe = () => {
     return (
         <>
-            <div className='py-5 md:py-7 lg:py-10 w-[96%] mx-auto'>
+            <div className=''>
 
                 <h6 className='uppercase text-[#fdfdfd] font-medium text-xl text-center leading-5 tracking-[0.9] opacity-100'>
                     Newsletter Signup

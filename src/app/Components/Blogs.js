@@ -66,6 +66,10 @@ const Blogs = () => {
                     </div>
                 ))}
             </div>
+            <div className='flex items-center justify-center'    >
+                <button className='bg-[#5ec900] cursor-pointer text-white rounded-xl lg:rounded-2xl lg:px-16 py-3 px-12 text-xl lg:py-6 font-bold lg:text-2xl mx-auto my-0 mt-5 lg:mt-10'>View More</button>
+
+            </div>
         </div>
     )
 }

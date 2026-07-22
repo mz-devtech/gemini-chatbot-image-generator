@@ -10,6 +10,8 @@ import Subscribe from "./Components/Subscribe";
 import { FaQ } from "react-icons/fa6";
 import FaqSection from "./Components/Faq";
 import Blogs from "./Components/Blogs";
+import Gallery from "./Components/Gallery";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -27,6 +29,8 @@ export default function Home() {
       <Subscribe />
       <FaqSection />
       <Blogs />
+      <Gallery />
+      <Footer />
 
     </>
   );
