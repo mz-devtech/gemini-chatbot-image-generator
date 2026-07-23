@@ -17,7 +17,7 @@ export const Navbar = () => {
         },
         {
             id: 2,
-            name: "Pages",
+            name: "About",
             link: "/about",
         },
         {
