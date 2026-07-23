@@ -1,13 +1,11 @@
 /* Buttons.css */
-/* Ticker/marquee animation for the buttons - scrolls left to right, seamless loop */
+/* Ticker/marquee animation for the buttons - scrolls right to left, seamless loop */
 
 .marquee-wrapper {
   overflow: hidden;
-  width: 100vw;
-  /* full viewport width, ignoring parent's width */
-  margin: 0 0 0 calc(-50vw + 50%);
-  /* pulls it back to start exactly at screen edge x:0 */
-  padding: 0;
+  /* width and margin-left are set inline via JS (Buttons.jsx),
+     measured directly from the real DOM instead of calculated
+     with vw units, so this file no longer needs to guess them. */
 }
 
 .marquee-track {
@@ -15,8 +13,7 @@
   align-items: center;
   width: max-content;
   white-space: nowrap;
-  margin: 0;
-  padding: 0;
+
   animation: marquee-reverse 30s linear infinite;
 }
 

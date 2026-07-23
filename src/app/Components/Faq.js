@@ -78,7 +78,7 @@ const FaqSection = () => {
                     {faqs.map((faq, index) => {
                         const isActive = activeIndex === index
                         return (
-                            <div key={index} className='border-b border-white/20 py-5'>
+                            <div key={index} className='border-b border-white/20 py-5 mx-3 lg:mx-0'>
                                 <button
                                     type="button"
                                     onClick={() => toggleFaq(index)}

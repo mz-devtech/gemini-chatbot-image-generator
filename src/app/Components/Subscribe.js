@@ -4,7 +4,7 @@ import { LuSend } from "react-icons/lu";
 const Subscribe = () => {
     return (
         <>
-            <div className=''>
+            <div className='mx-8 lg:mx-0'>
 
                 <h6 className='uppercase text-[#fdfdfd] font-medium text-xl text-center leading-5 tracking-[0.9] opacity-100'>
                     Newsletter Signup
@@ -31,7 +31,7 @@ const Subscribe = () => {
                             type="checkbox"
                             className='lg:w-6 lg:h-6  cursor-pointer mt-5 accent-white'
                         />
-                        <span className='text-white/70 lg:text-lg tracking-widest mt-5'>
+                        <span className='text-white/70 text-sm lg:text-lg tracking-widest mt-5'>
                             I agree to the <a href="#" className='underline text-[#fdfdfd]'>Privacy Policy</a>.
                         </span>
                     </label>
