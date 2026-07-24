@@ -66,7 +66,7 @@ export const Navbar = () => {
 
                     {/* Desktop Get Started Button */}
                     <div className="hidden lg:block">
-                        <Link href="/register" className="bg-[#6600ff] text-xl py-4 px-10 rounded-2xl text-[#fdfdfd]">
+                        <Link href="/signup" className="bg-[#6600ff] text-xl py-4 px-10 rounded-2xl text-[#fdfdfd]">
                             Get Started
                         </Link>
                     </div>

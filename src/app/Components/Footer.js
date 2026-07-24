@@ -1,7 +1,15 @@
 import React from 'react'
+import Link from 'next/link'
 
 const socials = ["Facebook", "Twitter", "Dribble", "Instagram"]
-const menu = ["Home", "About", "Services", "Shop", "Contacts"]
+
+const menu = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Blogs", link: "/blogs" },
+    { name: "Contacts", link: "/contacts" },
+    { name: "Login", link: "/login" },
+]
 
 const Footer = () => {
     return (
@@ -85,10 +93,13 @@ const Footer = () => {
                         <h4 className='text-[#fdfdfd] text-lg lg:text-3xl font-bold mb-6'>Menu</h4>
                         <ul className='space-y-3'>
                             {menu.map((item) => (
-                                <li key={item}>
-                                    <a href='#' className='text-[#a9a7b0] hover:text-[#fdfdfd] transition-colors duration-300 text-base lg:text-2xl'>
-                                        {item}
-                                    </a>
+                                <li key={item.name}>
+                                    <Link
+                                        href={item.link}
+                                        className='text-[#a9a7b0] hover:text-[#fdfdfd] transition-colors duration-300 text-base lg:text-2xl'
+                                    >
+                                        {item.name}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -106,7 +117,6 @@ const Footer = () => {
                     </div>
                 </div>
 
-                
             </div>
         </footer>
     )
