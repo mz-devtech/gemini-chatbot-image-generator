@@ -8,6 +8,9 @@ function SkillBar({ label, percent, delay = 0 }) {
     const isInView = useInView(ref, { once: true, margin: '-50px' });
     const [displayPercent, setDisplayPercent] = useState(0);
 
+
+    const query = ""
+
     // animate the numeric label in sync with the bar fill
     useEffect(() => {
         if (!isInView) return;
@@ -94,6 +97,7 @@ export default function SkillsSection({
                     ))}
                 </div>
             </div>
+            {}
         </section>
     );
 }

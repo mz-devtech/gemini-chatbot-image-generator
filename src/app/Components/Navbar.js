@@ -23,17 +23,19 @@ export const Navbar = () => {
         {
             id: 3,
             name: "Blogs",
-            link: "/about",
+            link: "/blogs",
         },
         {
             id: 4,
-            name: "Shop",
-            link: "/about",
+            name: "Contacts",
+            link: "/contacts",
+
         },
         {
             id: 5,
-            name: "Contacts",
-            link: "/about",
+            name: "Login",
+            link: "/login",
+
         },
     ];
 
@@ -64,9 +66,9 @@ export const Navbar = () => {
 
                     {/* Desktop Get Started Button */}
                     <div className="hidden lg:block">
-                        <button className="bg-[#6600ff] text-xl py-4 px-10 rounded-2xl text-[#fdfdfd]">
+                        <Link href="/register" className="bg-[#6600ff] text-xl py-4 px-10 rounded-2xl text-[#fdfdfd]">
                             Get Started
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Mobile Hamburger Toggle */}
