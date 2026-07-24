@@ -38,7 +38,7 @@ const ContactsPage = () => {
         <>
             <Navbar />
 
-            <div className='w-[100%] lg:mx-30 mt-12 mx-10'>
+            <div className='w-full px-6 lg:px-0 lg:mx-30 mt-12 overflow-x-hidden lg:overflow-visible'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-0 lg:mt-32 mt-16'>
                     {/* Left: heading + image */}
                     <div>
@@ -61,8 +61,8 @@ const ContactsPage = () => {
                         </div>
                     </div>
 
-                    {/* Right: form */}
-                    <div className='flex flex-col gap-2 lg:mt-0 mt-14 transform lg:translate-y-40 lg:-translate-x-20'>
+                    {/* Right: form — lg:translate-y-40 lg:-translate-x-20 kept exactly as original */}
+                    <div className='flex flex-col gap-2 mt-14 lg:mt-0 transform lg:translate-y-40 lg:-translate-x-20'>
                         {submitted ? (
                             <div className='flex flex-col justify-center h-full'>
                                 <p className='text-[#fdfdfd] text-xl lg:text-2xl font-semibold'>
@@ -73,7 +73,10 @@ const ContactsPage = () => {
                                 </p>
                             </div>
                         ) : (
-                            <form onSubmit={handleSubmit} className='flex flex-col bg-[#0d111a] lg:p-22 '>
+                            <form
+                                onSubmit={handleSubmit}
+                                className='flex flex-col bg-[#0d111a] p-6 lg:p-22'
+                            >
                                 {formFields.map(({ icon: Icon, name, type, placeholder }, i) => (
                                     <div
                                         key={i}
@@ -103,7 +106,7 @@ const ContactsPage = () => {
 
                                 <button
                                     type='submit'
-                                    className='w-fit flex items-center gap-3 bg-[#5ec900] hover:bg-[#52b300] transition-colors duration-300 text-white font-semibold rounded-xl px-10 py-6 text-base lg:text-2xl lg:mt-12 mt-8'
+                                    className='w-full sm:w-fit flex items-center justify-center gap-3 bg-[#5ec900] hover:bg-[#52b300] transition-colors duration-300 text-white font-semibold rounded-xl px-6 py-4 lg:px-10 lg:py-6 text-base lg:text-2xl lg:mt-12 mt-8'
                                 >
                                     <FaPaperPlane size={20} />
                                     Get in Touch
@@ -123,7 +126,7 @@ const ContactsPage = () => {
                             <span className='absolute text-7xl lg:text-[180px] font-extrabold text-white/[0.1] select-none pointer-events-none'>
                                 {number}
                             </span>
-                            <div className='relative z-10'>
+                            <div className='relative z-10 px-4 lg:px-0'>
                                 {lines.map((line, j) => (
                                     <p
                                         key={j}
